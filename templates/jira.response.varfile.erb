@@ -1,0 +1,12 @@
+# install4j response file for JIRA 6.1.1
+# Created by Puppet
+executeLauncherAction$Boolean=true
+app.install.service$Boolean=true
+sys.confirmedUpdateInstallationString=false
+sys.languageId=en
+rmiPort$Long=8005
+httpPort$Long=8080
+portChoice=default
+existingInstallationDir=<%= @install_path %>
+sys.installationDir=<%= @install_path %>
+<% if @data_path %>app.jiraHome=<%= @data_path %><% end %>
